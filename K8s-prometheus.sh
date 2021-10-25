@@ -8,14 +8,13 @@ chmod 775 $LOGFILE
 pipe_log=true
 
 # The installation will look for this file locally, if not found it will pull it form github.
-FUNCTIONS_FILE='functions.sh'
+FUNCTIONS_FILE='functions-uni.sh'
 
 # The user to run the commands from. Will be overwritten when executing this shell with sudo
 USER="ubuntu"
 
 # create_workshop_user=true (will clone the home directory from USER and allow SSH login with text password )
-NEWPWD="dtu_training"
-NEWUSER="dynatrace"
+NEWUSER="dtu_training"
 
 # ****  Define Dynatrace Environment ****
 # Sample: https://{your-domain}/e/{your-environment-id} for managed or https://{your-environment-id}.live.dynatrace.com for SaaS
@@ -39,7 +38,7 @@ KEPTN_EXAMPLES_BRANCH=0.6.1
 TEASER_IMAGE="shinojosa/nginxacm"
 KEPTN_BRIDGE_IMAGE="keptn/bridge2:20200326.0744"
 MICROK8S_CHANNEL="1.15/stable"
-FUNCTION_REPO="https://raw.githubusercontent.com/nikhilgoenkatech/k8prometheus/main/functions.sh"
+FUNCTION_REPO="https://raw.githubusercontent.com/nikhilgoenkatech/k8prometheus/main/functions-uni.sh"
 
 ## ----  Write all to the logfile ----
 if [ "$pipe_log" = true ] ; then
