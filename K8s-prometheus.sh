@@ -65,7 +65,7 @@ if [ -f "$FUNCTIONS_FILE" ]; then
     echo "The functions file $FUNCTIONS_FILE exists locally, loading functions from it."
 else
     echo "The functions file $FUNCTIONS_FILE does not exist, getting it from github."
-    curl -o functions.sh $FUNCTION_REPO
+    curl -o functions-uni.sh $FUNCTION_REPO
 fi
 
 # Comfortable function for setting the sudo user.
